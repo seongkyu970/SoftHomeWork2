@@ -81,7 +81,7 @@ https://github.com/seongkyu970/SoftHomeWork2.git
 ## merge
 > - 하나의 브랜치(practice)에서 작업된 commit(merge1)을 다른 브랜치(master)로 가져오지 못한 상태이다.
 > - 이를 위해 git명령어 'merge'를 사용한다.
-> - 'merge'명령어는 하나 혹은 여러 개의 브랜치를 해드에 통합하는 것으로 git merge BRANCH_NAME 으로 사용한다.같은 코드를 변경한 경우에는 conflict 가 발생한다. 머지에 대한 메세지를 남기는 -m 옵션이 있다.  
+> - 'merge'명령어는 하나 혹은 여러 개의 브랜치를 해드에 통합하는 것으로 git merge BRANCH_NAME 으로 사용한다.다른 브랜치에서 같은 코드를 변경한 이후 머지를 할 경우 conflict 가 발생한다. 머지에 대한 메세지를 남기는 -m 옵션이 있다.  
 ![image](https://user-images.githubusercontent.com/67774264/116835094-f164fb00-abfb-11eb-9360-934be291961f.png)  
 [Table](#명령어-목록)
 
@@ -89,7 +89,7 @@ https://github.com/seongkyu970/SoftHomeWork2.git
 > - 현재 로컬 저장소(git 디렉토리)에 대한 원격 저장소(github)가 없는 상태이다.
 > - 로컬 저장소에 원격 저장소(github)를 연결시키고 싶다.
 > - 이를 위해 git 명령어'remote'를 사용한다.
-> - 'remote'는 원격 저장소를 등록하는 명령어로 git remote add NAME 저장소_주소 로 사용할 수 있다. 더 상세히 보여주는 -v, 삭제를 위한 git remote remove NAME 과 같은 옵션이있다.
+> - 'remote'는 원격 저장소를 등록하는 명령어로 git remote add NAME 저장소_주소 로 사용할 수 있다. 더 상세히 보여주는 -v, 삭제를 위한 git remote remove NAME 과 같은 옵션이있다.  
 > ![image](https://user-images.githubusercontent.com/67774264/116840566-419a8800-ac11-11eb-9302-c8fb49c56894.png)
 [Table](#명령어-목록)
 
@@ -121,7 +121,7 @@ https://github.com/seongkyu970/SoftHomeWork2.git
 > - 소스 코드의 버전을 관리하기 위해 커밋중 어떤 특정한 커밋을 가리키고 싶다. 
 > - 이를 위해 git 명령어 'tag'를 사용한다.
 > - 'tag'는 특정 커밋 버전에 이름을 붙이기 위해 사용 되어 버전을 알리거나 다시 확인을 위한 용도로 git tag TAG_NAME 커밋해시or브랜치명 으로 사용한다.  
-> 태그를 설명하는 -m, 로컬 저장소 태그 삭제를 위한 -d 옵션이 있다.  
+> 태그를 설명하는 -m, 로컬 저장소 태그 삭제를 위한 -d 옵션이 있으며 github releases에 정리된다.
 > ![image](https://user-images.githubusercontent.com/67774264/116841917-9fc96a00-ac15-11eb-9e7b-9292fb3c7c8c.png)  
 [Table](#명령어-목록)
 
@@ -129,7 +129,7 @@ https://github.com/seongkyu970/SoftHomeWork2.git
 > - 하나의 브랜치(practice)에서 진행된 소스(reb.txt)와 다른 브랜치(master)에서 진행된 소스(reb2.txt)를 합치면서 merge와 달리 히스토리를 일렬로 합치고 싶다.
 > - 이를 위해 git 명령어 'rebase'를 사용한다.
 > - 'rebase' 는 merge와 최종 결과물은 같지만 히스토리를 정리하기위해 git rebase 로 사용한다.  
-> 되돌아갈 시점을 선택하기위한 -i, 되돌린것을 원상복구하는 --continue 등의 옵션이 있다.  
+> 되돌아갈 시점을 선택하기위한 -i, 되돌린시점을 원상복구하는 --continue 등의 옵션이 있다.  
 > ![image](https://user-images.githubusercontent.com/67774264/116842468-a48f1d80-ac17-11eb-9710-e74ec1228c2d.png)  
 [Table](#명령어-목록)
 
